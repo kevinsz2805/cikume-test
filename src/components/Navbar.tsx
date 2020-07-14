@@ -5,9 +5,9 @@ import { Link } from "react-router-dom";
 const Navbar = (props: PropsNavbar) => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <a className="navbar-brand" href="#">
+      <span className="navbar-brand">
         Cikume Test
-      </a>
+      </span>
       <button
         className="navbar-toggler"
         type="button"
@@ -22,9 +22,8 @@ const Navbar = (props: PropsNavbar) => {
       <div className="collapse navbar-collapse" id="navbarNavDropdown">
         <ul className="navbar-nav">
           <li className="nav-item dropdown">
-            <a
+            <span
               className="nav-link dropdown-toggle"
-              href="#"
               id="navbarDropdownMenuLink"
               role="button"
               data-toggle="dropdown"
@@ -32,7 +31,7 @@ const Navbar = (props: PropsNavbar) => {
               aria-expanded="false"
             >
               Menu
-            </a>
+            </span>
             <div className="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
               {props.items.map((menu: PropsMenuItems, index: number) => {
                 return (

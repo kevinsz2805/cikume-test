@@ -4,7 +4,7 @@ This project shows all the solution for the Cikume-test, when you run the applic
 
 1. Solution 1 (the answer to the image code)
 2. TODO List 
-3. Hellow World 
+3. Hello World 
 4. Semantic and non-Semantic css
 
 This project was created with:
@@ -19,6 +19,7 @@ This project was created with:
 To ue this project you have to follow this steps:
 
 1. Clone the repository to your local machine.
+2. then in your terminal run cd repositoryname (in our case is cikume-test)
 2. run 'npm install' to get all the dependencies of the project.
 
 ### `npm run start`
