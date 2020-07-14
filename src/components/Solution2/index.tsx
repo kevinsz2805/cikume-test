@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import TodoList from "./TodoList";
 import { ItemsProps } from "../../interfaces/todo-props";
+import Toast from "../Toast";
 
 const Solution2 = () => {
+  const [show, setShow] = useState("");
+  const [showMessage, setShowMessage] = useState("");
   const [items, setItems] = useState([
     {
       id: 1,
@@ -26,13 +29,24 @@ const Solution2 = () => {
       let newItems = [...items];
       newItems[e.target.value].done = !itemSelected.done;
       setItems(newItems);
-      console.log("item:", e.target, "\n event:", e.type);
+      setShow("show");
+      console.log(e);
+      setShowMessage(`item: ${itemSelected.text} event: ${e.type}`);
     }
   };
 
   return (
     <div className="container">
-      <TodoList data={items} onChange={OnClickList} />
+      <div className="col-lg-12">
+        <br />
+      </div>
+      <div className="card">
+        <h5 className="card-header">Solution 2</h5>
+        <div className="card-body">
+          <TodoList data={items} onChange={OnClickList} />
+        </div>
+      </div>
+      <Toast message={showMessage} show={show} setShow={setShow} />
     </div>
   );
 };
