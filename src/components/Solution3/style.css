@@ -27,7 +27,7 @@
   }
 }
 
-/* // Large screen desktops 1200px and up */
+/* Large screen desktops 1200px and up */
 @media (min-width: 1200px) {
   .divHello {
     width: 33.33%;
