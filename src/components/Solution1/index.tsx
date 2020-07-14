@@ -2,6 +2,7 @@ import React from "react";
 import { codemirror } from "./style";
 import Span from "../Span";
 import { spanText } from "./text-span";
+import { ElementSpanProps } from "../../interfaces/element-span-props";
 
 const Solution1 = () => {
   return (
@@ -39,9 +40,9 @@ const Solution1 = () => {
                 <div className="col-md-6" style={codemirror.divContainer}>
                   <pre>
                     <code>
-                      {spanText.map((element) => {
+                      {spanText.map((element: ElementSpanProps , index: number) => {
                         return (
-                          <code>
+                          <code key={index}>
                             <Span style={element.style} text={element.text} />
                           </code>
                         );

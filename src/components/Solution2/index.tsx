@@ -30,7 +30,6 @@ const Solution2 = () => {
       newItems[e.target.value].done = !itemSelected.done;
       setItems(newItems);
       setShow("show");
-      console.log(e);
       setShowMessage(`item: ${itemSelected.text} event: ${e.type}`);
     }
   };

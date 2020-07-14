@@ -1,7 +1,6 @@
-import React, { useState } from "react";
+import React from "react";
 
 const Toast = (props: any) => {
-  console.log(props);
   return (
     <div className={`alert alert-success alert-dismissible fade ${props.show}`}>
       <strong> {props.message} </strong>
